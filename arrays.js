@@ -35,9 +35,20 @@ console.log(arrDuplicates(arr));
 
 // Write a JS script to search for the following word in the array."food"If the word is present, return it else return "the search word was not found"let arr5 = ["the", "way", "x", 4];
 
-
-
+let arr5 = ["the", "way", "x", 4];
+function searchWord(word5){
+    word5= word5.map(item => String(item).toLowerCase());
+    if(word5.includes("food")){
+        return "food";
+    } else {
+        return "the search word was not found"
+    }
+}
+console.log(searchWord(arr5));
 
 
 // Write a JS script to sort the following string:let word = "renniw"
 
+let word = "renniw";
+let sortedWord = word.split('').sort().join('');
+console.log({sortedWord});
